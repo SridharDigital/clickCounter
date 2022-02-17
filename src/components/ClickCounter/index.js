@@ -1,7 +1,7 @@
-import {Components} from 'react'
+import {Component} from 'react'
 import './index.css'
 
-class ClickCounter extends Components {
+class ClickCounter extends Component {
   state = {count: 0}
 
   onIncrement = () => {
@@ -17,7 +17,7 @@ class ClickCounter extends Components {
           times
         </h1>
         <p className="description">Click the button to increase the count!</p>
-        <button className="button" type="button">
+        <button onClick={this.onIncrement} className="button" type="button">
           Click Me!
         </button>
       </div>
